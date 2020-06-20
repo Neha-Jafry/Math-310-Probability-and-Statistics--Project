@@ -37,14 +37,14 @@ def path(start, step, angle):
             if d2 > d1:
                 path.append([newX1, newY1])
                 a, b = zip(*path)
-                plt.plot(a, b)
+                plt.plot(a, b, color = 'b')
                 path = []
                 x = -newX1
                 y = -newY1
             else:
                 path.append([newX2, newY2])
                 a, b = zip(*path)
-                plt.plot(a, b)
+                plt.plot(a, b, color = 'b')
                 path = []
                 x = -newX1
                 y = -newY1
@@ -52,7 +52,7 @@ def path(start, step, angle):
         path.append(curr)
 
     a, b = zip(*path)
-    plt.plot(a, b)
+    plt.plot(a, b, color = 'b')
     plt.axis([-150, 150, -150, 150])
     plt.show()
 
