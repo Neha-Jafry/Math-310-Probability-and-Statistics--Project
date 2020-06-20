@@ -60,5 +60,8 @@ def path(start, step, angle):
 step_sample = [uniform(low=0.0, high=1.0) for _ in range(1000)]
 angle_sample = [uniform(low=0.0, high=360.0) for _ in range(10000)]
 
+circle1=plt.Circle((0,0),100,color='g', alpha= 0.2)
+plt.gcf().gca().add_artist(circle1)
+
 path([0, 0], step_sample, angle_sample)
 
